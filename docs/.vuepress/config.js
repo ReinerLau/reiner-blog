@@ -2,7 +2,7 @@
  * @Author: 
  * @Date: 2022-05-24 15:38:20
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-24 16:20:42
+ * @LastEditTime: 2022-05-24 16:25:57
  * @FilePath: \reiner-blog\docs\.vuepress\config.js
  * @Description: 配置文件
  */
@@ -19,6 +19,16 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '文章', link: '/pages/posts/' }
-        ]
+        ],
+        sidebar: {
+            '/pages/posts/': [
+                {
+                    title: 'mini-vue系列',
+                    children: [
+                        ['mini-vue_5.md', 'mini-vue第五章-环境配置']
+                    ]
+                }
+            ]
+        }
     }
 }
