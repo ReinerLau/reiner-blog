@@ -1,0 +1,14 @@
+{
+  "name": "reiner-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "reiner850593913 <103234074+reiner850593913@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
