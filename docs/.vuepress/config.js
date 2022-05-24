@@ -2,7 +2,7 @@
  * @Author: 
  * @Date: 2022-05-24 15:38:20
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-24 15:59:26
+ * @LastEditTime: 2022-05-24 16:01:33
  * @FilePath: \reiner-blog\docs\.vuepress\config.js
  * @Description: 配置文件
  */
@@ -14,7 +14,10 @@ module.exports = {
             { rel: 'icon', href: '/avator.jpg' }
         ],
     ],
-    themeConfig:{
-        logo:'/avator.jpg'
+    themeConfig: {
+        logo: '/avator.jpg',
+        nav: [
+            { text: '首页', link: '/' }
+        ]
     }
 }
