@@ -10,6 +10,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:reiner850593913/reiner850593913.github.io.git master:gh-pages
+git push -f git@github.com:reiner850593913/reiner-blog.git master:gh-pages
 
 cd -
