@@ -1,16 +1,17 @@
-name: 'Github Actions Test'
-on:
-  # 监听push事件
-  push:
-    branches:
-      # 监听push到 gh-pages
-      - gh-pages
+name: Build and Deploy
+on: [push]
 jobs:
-  # job名字叫test
-  test:
-    # 指定运行所需要的虚拟机环境
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 第一步
-      - name: Test Actions
-        run: echo Hello, world!
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: reiner850593913/reiner850593913.github.io
+        TARGET_BRANCH: gh-pages
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: docs/.vuepress/dist
