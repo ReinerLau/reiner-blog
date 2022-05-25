@@ -1,0 +1,16 @@
+name: 'Github Actions Test'
+on:
+  # 监听push事件
+  push:
+    branches:
+      # 监听push到 gh-pages
+      - gh-pages
+jobs:
+  # job名字叫test
+  test:
+    # 指定运行所需要的虚拟机环境
+    runs-on: ubuntu-latest
+    steps:
+      # 第一步
+      - name: Test Actions
+        run: echo Hello, world!
