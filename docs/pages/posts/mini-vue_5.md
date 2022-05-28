@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-05-24 16:27:26
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-27 07:52:06
+ * @LastEditTime: 2022-05-28 18:39:07
  * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_5.md
  * @Description: 第五章 - 环境配置
 -->
@@ -101,3 +101,76 @@ yarn add @types/jest
   }
 }
 ```
+
+修改`package.json`配置测试脚本
+
+```json {2}
+"scripts": {
+  "test":"jest"
+}
+```
+
+运行测试
+
+```bash
+yarn test
+```
+
+## 测试ES6模块
+
+`src/reactivity/index.js`下导出一个函数用于测试
+
+```javascript
+// index.js
+export function add(a, b) {
+    return a + b
+}
+```
+
+`src/reactivity/tests/index.spec.js`中用ES6的方式引入函数
+
+```javascript {2,6}
+// index.spce.js
+import { add } from '../index';
+
+describe('reactivity', () => {
+    it('test', () => {
+        expect(add(1, 2)).toBe(3)
+    });
+});
+```
+
+这时候运行测试会报错，因为`node`不认识ES6模块语法，需要使用`babel`进行语法转换
+
+对照[官方文档](https://jestjs.io/zh-Hans/docs/getting-started#%E4%BD%BF%E7%94%A8-babel)下载相关依赖并配置
+
+```bash
+yarn add babel-jest @babel/core @babel/preset-env -D
+```
+
+```javascript
+// babel.config.js
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+}
+```
+
+顺便支持一下`typescript`
+
+```bash
+yarn add @babel/preset-typescript -D
+```
+
+```javascript {5}
+// babel.config.js
+module.exports = {
+  presets: [
+    ['@babel/preset-env', {targets: {node: 'current'}}],
+    '@babel/preset-typescript',
+  ],
+};
+```
+
+现在跑一下测试应该就可以通过了
+
+以上就是开发项目需要的测试环境搭建，下一章正式开始探寻`Vue3`的源码
