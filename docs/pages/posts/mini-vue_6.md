@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-05-24 16:27:26
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-28 22:45:19
+ * @LastEditTime: 2022-05-29 10:27:41
  * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_6.md
  * @Description: 第六章 - Reactive原理
 -->
@@ -14,8 +14,8 @@
 
 先写测试用例（记得先删除上一篇文章中用于测试搭建环境的测试用例）
 
-```javascript
-// src/reactivity/tests/reactive.spec.js
+```typescript
+// src/reactivity/tests/reactive.spec.ts
 import { reactive } from '../reactive'
 
 describe('reactive', () => {
@@ -35,8 +35,8 @@ describe('reactive', () => {
 
 `reactive`的原理就是利用ES6的新特性`Proxy`监听对象属性的读写操作，然后进行依赖收集，触发依赖
 
-```javascript
-// src/reactivity/reactive.js
+```typescript
+// src/reactivity/reactive.ts
 export function reactive(raw){
     return new Proxy(raw,{
         get(target, key){
@@ -61,8 +61,8 @@ export function reactive(raw){
 
 先写测试用例
 
-```javascript
-// src/reactivity/tests/effect.spec.js
+```typescript
+// src/reactivity/tests/effect.spec.ts
 import { reactive } from "../reactive";
 import { effect } from '../effect';
 
@@ -84,8 +84,8 @@ describe('effect', () => {
 
 实现
 
-```javascript
-// src/reactivity/effect.js
+```typescript
+// src/reactivity/effect.ts
 class ReactiveEffect {
     constructor(fn) {
         this._fn = fn
@@ -107,8 +107,8 @@ export function effect(fn) {
 
 ## 依赖收集
 
-```javascript{2,9-10}
-// src/reactivity/reactive.js
+```typescript {2,9-10}
+// src/reactivity/reactive.ts
 import { track } from './effect';
 
 export function reactive(raw) {
@@ -131,8 +131,8 @@ export function reactive(raw) {
 }
 ```
 
-```javascript{8,13-35}
-// src/reactivity/effect.js
+```typescript {8,13-35}
+// src/reactivity/effect.ts
 class ReactiveEffect {
     constructor(fn) {
         this._fn = fn
@@ -173,8 +173,8 @@ export function track(target, key) {
 
 先改测试用例
 
-```javascript{16-18}
-// src/reactivity/tests/effect.spec.js
+```typescript {16-18}
+// src/reactivity/tests/effect.spec.ts
 import { reactive } from "../reactive";
 import { effect } from '../effect';
 
@@ -198,8 +198,8 @@ describe('effect', () => {
 
 实现
 
-```javascript{2,18-19}
-// src/reactivity/reactive.js
+```typescript {2,18-19}
+// src/reactivity/reactive.ts
 import { track,trigger } from './effect';
 
 export function reactive(raw) {
@@ -225,8 +225,8 @@ export function reactive(raw) {
 }
 ```
 
-```javascript{38-45}
-// src/reactivity/effect.js
+```typescript {38-45}
+// src/reactivity/effect.ts
 class ReactiveEffect {
     constructor(fn) {
         this._fn = fn
