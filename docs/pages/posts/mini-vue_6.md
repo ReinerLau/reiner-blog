@@ -2,11 +2,11 @@
  * @Author: Reiner
  * @Date: 2022-05-24 16:27:26
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-29 10:27:41
+ * @LastEditTime: 2022-05-29 10:31:47
  * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_6.md
  * @Description: 第六章 - Reactive原理
 -->
-# 第六章 - Reactivity原理
+# 第六章 - 实现 effect & reactive & 依赖收集 & 触发依赖
 
 ## Reactive
 
