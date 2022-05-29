@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-05-29 09:50:41
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-29 10:06:39
+ * @LastEditTime: 2022-05-29 10:29:14
  * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_7.md
  * @Description: 第七章 - 实现 effect 返回 runner
 -->
@@ -12,8 +12,8 @@
 
 测试用例
 
-```javascript{8-17}
-// src/reactivity/effect.spec.js
+```typescript {8-17}
+// src/reactivity/effect.spec.ts
 import { reactive } from "../reactive";
 import { effect } from '../effect';
 
@@ -35,8 +35,8 @@ describe('effect', () => {
 
 实现
 
-```javascript{20}
-// src/reactivity/effect.js
+```typescript {20}
+// src/reactivity/effect.ts
 class ReactiveEffect {
     constructor(fn) {
         this._fn = fn
@@ -65,8 +65,8 @@ export function effect(fn) {
 
 测试用例
 
-```javascript{12,18}
-// src/reactivity/effect.spec.js
+```typescript {12,18}
+// src/reactivity/effect.spec.ts
 import { reactive } from "../reactive";
 import { effect } from '../effect';
 
@@ -90,8 +90,8 @@ describe('effect', () => {
 
 实现
 
-```javascript{9}
-// src/reactivity/effect.js
+```typescript {9}
+// src/reactivity/effect.ts
 class ReactiveEffect {
     constructor(fn) {
         this._fn = fn
