@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-05-24 16:27:26
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-28 18:39:07
+ * @LastEditTime: 2022-05-29 10:22:40
  * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_5.md
  * @Description: 第五章 - 环境配置
 -->
@@ -118,19 +118,37 @@ yarn test
 
 ## 测试ES6模块
 
-`src/reactivity/index.js`下导出一个函数用于测试
+`src/reactivity/index.ts`下导出一个函数用于测试
 
-```javascript
-// index.js
+```typescript
+// index.ts
 export function add(a, b) {
     return a + b
 }
 ```
 
-`src/reactivity/tests/index.spec.js`中用ES6的方式引入函数
+关闭`typescript`的`any`提示，因为我们不关注类型
 
-```javascript {2,6}
-// index.spce.js
+```json {10}
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2016",                                  
+    "module": "commonjs",                                
+    "types": ["jest"],                                    
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                      
+    "noImplicitAny": false,
+    "skipLibCheck": true                                 
+  }
+}
+```
+
+用ES6的方式引入函数
+
+```typescript {2,6}
+// src/reactivity/tests/index.spec.ts
 import { add } from '../index';
 
 describe('reactivity', () => {
