@@ -2,8 +2,8 @@
  * @Author: Reiner
  * @Date: 2022-05-24 16:27:26
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-05-29 10:31:47
- * @FilePath: \reiner-blog\docs\pages\posts\mini-vue_6.md
+ * @LastEditTime: 2022-06-05 13:51:30
+ * @FilePath: \reiner-blog\docs\pages\mini-vue\mini-vue_6.md
  * @Description: 第六章 - Reactive原理
 -->
 # 第六章 - 实现 effect & reactive & 依赖收集 & 触发依赖
@@ -130,6 +130,10 @@ export function reactive(raw) {
     })
 }
 ```
+
+每个响应式对象对应一个`Map`，`Map`的每个键对应响应式对象的属性，每个键值对应一个`Set`，存放依赖且依赖不能重复
+
+`effect`调用时先用全局变量`activeEffect`存放当前的`ReactiveEffect`，然后触发`Proxy`的`get`操作开始收集依赖
 
 ```typescript {8,13-35}
 // src/reactivity/effect.ts
