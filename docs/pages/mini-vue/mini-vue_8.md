@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-06-01 07:55:46
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-06-01 08:18:53
+ * @LastEditTime: 2022-06-05 12:39:45
  * @FilePath: \reiner-blog\docs\pages\mini-vue\mini-vue_8.md
  * @Description: 第八章 - 实现 effect.scheduler
 -->
@@ -39,7 +39,7 @@ describe('effect', () => {
 }}
 ```
 
-实现
+# 实现
 
 ```typescript {4,15-17,30-36}
 // src/reactivity/effect.ts
