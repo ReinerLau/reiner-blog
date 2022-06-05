@@ -2,7 +2,7 @@
  * @Author: 
  * @Date: 2022-05-24 15:38:20
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-06-01 08:17:04
+ * @LastEditTime: 2022-06-05 11:01:44
  * @FilePath: \reiner-blog\docs\.vuepress\config.js
  * @Description: 配置文件
  */
@@ -30,7 +30,8 @@ module.exports = {
                 ['mini-vue_5.md', 'mini-vue第五章-环境配置'],
                 ['mini-vue_6.md', 'mini-vue第六章-实现 effect & reactive & 依赖收集 & 触发依赖'],
                 ['mini-vue_7.md', 'mini-vue第七章-实现 effect 返回 runner'],
-                ['mini-vue_8.md', 'mini-vue第八章-实现 effect.scheduler']
+                ['mini-vue_8.md', 'mini-vue第八章-实现 effect.scheduler'],
+                ['mini-vue_9.md', 'mini-vue第九章-实现 effect.stop']
             ]
         },
         lastUpdated: true,
