@@ -2,7 +2,7 @@
  * @Author: Reiner
  * @Date: 2022-06-07 18:38:39
  * @LastEditors: Do not edit
- * @LastEditTime: 2022-06-07 19:33:04
+ * @LastEditTime: 2022-06-08 07:55:40
  * @FilePath: \reiner-blog\docs\pages\mini-vue\mini-vue_10.md
  * @Description: 第十章 - 实现 readonly
 -->
@@ -170,6 +170,25 @@ export function reactive(raw) {
 
 export function readonly(raw) {
     return new Proxy(raw, readonlyHandler)
+}
+```
+
+对于`new Proxy`这样的低代码可以使用更加语义化的函数封装起来
+
+```typescript {5,9,12-14}
+// src/reactivity/reactive.ts
+import { mutableHandler, readonlyHandler } from "./baseHandlers"
+
+export function reactive(raw) {
+    return createReactiveObj(raw, mutableHandler)
+}
+
+export function readonly(raw) {
+    return createReactiveObj(raw, readonlyHandler)
+}
+
+function createReactiveObj(raw,handler){
+    return new Proxy(raw, handler)
 }
 ```
 
