@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reiner&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/reiner-blog/avator.jpg">
+    <meta name="description" content="Reiner的学习之路">
+    
+    <link rel="preload" href="/reiner-blog/assets/css/0.styles.04d7ecc5.css" as="style"><link rel="preload" href="/reiner-blog/assets/js/app.9144c545.js" as="script"><link rel="preload" href="/reiner-blog/assets/js/2.b59b1145.js" as="script"><link rel="preload" href="/reiner-blog/assets/js/16.21d91143.js" as="script"><link rel="prefetch" href="/reiner-blog/assets/js/10.2ef69622.js"><link rel="prefetch" href="/reiner-blog/assets/js/11.2c054683.js"><link rel="prefetch" href="/reiner-blog/assets/js/12.c22baee0.js"><link rel="prefetch" href="/reiner-blog/assets/js/13.575290bb.js"><link rel="prefetch" href="/reiner-blog/assets/js/14.ec97642d.js"><link rel="prefetch" href="/reiner-blog/assets/js/15.0bf4cc6d.js"><link rel="prefetch" href="/reiner-blog/assets/js/17.807d73e2.js"><link rel="prefetch" href="/reiner-blog/assets/js/3.793c6d8f.js"><link rel="prefetch" href="/reiner-blog/assets/js/4.7b294a7a.js"><link rel="prefetch" href="/reiner-blog/assets/js/5.1995693d.js"><link rel="prefetch" href="/reiner-blog/assets/js/6.8381d72e.js"><link rel="prefetch" href="/reiner-blog/assets/js/7.b0d7b2eb.js"><link rel="prefetch" href="/reiner-blog/assets/js/8.0ae6e0d2.js"><link rel="prefetch" href="/reiner-blog/assets/js/9.2234754a.js">
+    <link rel="stylesheet" href="/reiner-blog/assets/css/0.styles.04d7ecc5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/reiner-blog/" class="home-link router-link-active"><img src="/reiner-blog/avator.jpg" alt="Reiner's Blog" class="logo"> <span class="site-name can-hide">Reiner's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/reiner-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/reiner-blog/pages/posts/" class="nav-link">
+  文章
+</a></div><div class="nav-item"><a href="/reiner-blog/pages/mini-vue/" class="nav-link router-link-active">
+  mini-vue系列
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/reiner-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/reiner-blog/pages/posts/" class="nav-link">
+  文章
+</a></div><div class="nav-item"><a href="/reiner-blog/pages/mini-vue/" class="nav-link router-link-active">
+  mini-vue系列
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/reiner-blog/pages/mini-vue/" aria-current="page" class="sidebar-link">mini-vue系列</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_5.html" class="sidebar-link">mini-vue第五章 - 环境配置</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_6.html" class="sidebar-link">mini-vue第六章 - 实现 effect &amp; reactive &amp; 依赖收集 &amp; 触发依赖</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_7.html" class="sidebar-link">mini-vue第七章 - 实现 effect 返回 runner</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_8.html" class="sidebar-link">mini-vue第八章 - 实现 effect.scheduler</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_9.html" aria-current="page" class="active sidebar-link">mini-vue第九章 - 实现 effect.stop</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/reiner-blog/pages/mini-vue/mini-vue_9.html#stop" class="sidebar-link">stop</a></li><li class="sidebar-sub-header"><a href="/reiner-blog/pages/mini-vue/mini-vue_9.html#onstop" class="sidebar-link">onStop</a></li></ul></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_10.html" class="sidebar-link">mini-vue第十章 - 实现 readonly</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_11.html" class="sidebar-link">mini-vue第十一章 - 实现 isReactive 和 isReadonly</a></li><li><a href="/reiner-blog/pages/mini-vue/mini-vue_12.html" class="sidebar-link">mini-vue第十二章 - 优化 stop</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第九章-实现-effect-stop"><a href="#第九章-实现-effect-stop" class="header-anchor">#</a> 第九章 - 实现 effect.stop</h1> <h2 id="stop"><a href="#stop" class="header-anchor">#</a> stop</h2> <h3 id="测试用例"><a href="#测试用例" class="header-anchor">#</a> 测试用例</h3> <p>调用<code>stop</code>方法，传入调用<code>effect</code>后获取到的<code>runner</code></p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> dummy<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> runner <span class="token operator">=</span> <span class="token function">effect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    dummy <span class="token operator">=</span> obj<span class="token punctuation">.</span>foo    
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">expect</span><span class="token punctuation">(</span>dummy<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token function">stop</span><span class="token punctuation">(</span>runner<span class="token punctuation">)</span>
+</code></pre></div><p>修改依赖值后不触发更新，注意不能使用<code>obj.foo++</code>，会导致触发<code>get</code>重新收集依赖</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>obj<span class="token punctuation">.</span>foo <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token function">expect</span><span class="token punctuation">(</span>dummy<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre></div><p>完整代码</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// src/reactivity/tests/effect.spec.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> stop <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../effect'</span><span class="token punctuation">;</span>
+<span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'stop'</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> dummy<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> runner <span class="token operator">=</span> <span class="token function">effect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        dummy <span class="token operator">=</span> obj<span class="token punctuation">.</span>foo    
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>dummy<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token function">stop</span><span class="token punctuation">(</span>runner<span class="token punctuation">)</span>
+    obj<span class="token punctuation">.</span>foo <span class="token operator">=</span> <span class="token number">2</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>dummy<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h3> <p>因为依赖值更新是通过<code>trigger</code>遍历所有<code>dep</code>触发所有收集的<code>effect</code>，那么只需要去掉<code>dep</code>中<code>runner</code>对应的<code>effect</code></p> <p>导出stop函数</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">stop</span><span class="token punctuation">(</span>runner<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    runner<span class="token punctuation">.</span>effect<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>获取<code>runner</code>对应的<code>effect</code></p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">effect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> option<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scheduler <span class="token punctuation">}</span> <span class="token operator">=</span> option
+    <span class="token keyword">const</span> _effect <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ReactiveEffect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> scheduler<span class="token punctuation">)</span>
+
+    _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> runner<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>_effect<span class="token punctuation">)</span>
+    runner<span class="token punctuation">.</span>effect <span class="token operator">=</span> _effect
+
+    <span class="token keyword">return</span> runner
+<span class="token punctuation">}</span>
+</code></pre></div><p>因为一个effect可能对应多个依赖值，一个依赖值对应一个<code>dep</code>，需要<code>effect</code>反向收集多个相关的<code>dep</code></p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> targetMaps <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">track</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> depsMap <span class="token operator">=</span> targetMaps<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>depsMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        depsMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        targetMaps<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> depsMap<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> dep <span class="token operator">=</span> depsMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>dep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        depsMap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> dep<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    dep<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>activeEffect<span class="token punctuation">)</span>
+    activeEffect<span class="token punctuation">.</span>deps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>dep<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>实现<code>effect</code>的<code>stop</code>方法使用<code>Set.delete</code>删除<code>deps</code>对应的<code>effect</code></p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>deps<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>dep<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            dep<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>同时防止<code>reactice</code>测试用例不通过</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">let</span> targetMaps <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">track</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> depsMap <span class="token operator">=</span> targetMaps<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>depsMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        depsMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        targetMaps<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> depsMap<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> dep <span class="token operator">=</span> depsMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>dep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dep <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        depsMap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> dep<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>activeEffect<span class="token punctuation">)</span> <span class="token keyword">return</span>
+
+    dep<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>activeEffect<span class="token punctuation">)</span>
+    activeEffect<span class="token punctuation">.</span>deps<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>dep<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>优化一下<code>effect</code>的<code>stop</code>方法</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">cleanupEffect</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">cleanupEffect</span><span class="token punctuation">(</span>effect<span class="token operator">:</span> ReactiveEffect<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    effect<span class="token punctuation">.</span>deps<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>dep<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        dep<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>effect<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后优化一下性能问题，因为有多次调用<code>stop</code>方法，但其实只要一次就够了，需要一个状态标记</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    active <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>active<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">cleanupEffect</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>active <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">cleanupEffect</span><span class="token punctuation">(</span>effect<span class="token operator">:</span> ReactiveEffect<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    effect<span class="token punctuation">.</span>deps<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>dep<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        dep<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>effect<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="onstop"><a href="#onstop" class="header-anchor">#</a> onStop</h2> <h3 id="测试用例-2"><a href="#测试用例-2" class="header-anchor">#</a> 测试用例</h3> <p><code>onStop</code>的作用就是作为<code>effect</code>函数<code>options</code>参数也就是回调函数被传入，在<code>stop</code>函数执行后，该回调函数也执行</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// src/reactivity/tests/effect.spec.js</span>
+<span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'onStop'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> dummy<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> onStop <span class="token operator">=</span> jest<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> runner <span class="token operator">=</span> <span class="token function">effect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        dummy <span class="token operator">=</span> obj<span class="token punctuation">.</span>foo
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> onStop <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span>runner<span class="token punctuation">)</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>onStop<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeCalledTimes</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="实现-2"><a href="#实现-2" class="header-anchor">#</a> 实现</h3> <p>从<code>options</code>获取传入的<code>onStop</code>回调</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.js</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">effect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> option<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scheduler<span class="token punctuation">,</span> onStop <span class="token punctuation">}</span> <span class="token operator">=</span> option
+    <span class="token keyword">const</span> _effect <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ReactiveEffect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> scheduler<span class="token punctuation">)</span>
+    _effect<span class="token punctuation">.</span>onStop <span class="token operator">=</span> onStop
+
+    _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> runner<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>_effect<span class="token punctuation">)</span>
+    runner<span class="token punctuation">.</span>effect <span class="token operator">=</span> _effect
+
+    <span class="token keyword">return</span> runner
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>effect</code>接收<code>onStop</code></p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.js</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    active <span class="token operator">=</span> <span class="token boolean">true</span>
+    onStop<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>active<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">cleanupEffect</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>active <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>执行<code>stop</code>后触发<code>onStop</code>回调</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.js</span>
+<span class="token keyword">class</span> <span class="token class-name">ReactiveEffect</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _fn<span class="token operator">:</span> <span class="token builtin">any</span>
+    deps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    active <span class="token operator">=</span> <span class="token boolean">true</span>
+    onStop<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> <span class="token keyword">public</span> scheduler<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_fn <span class="token operator">=</span> fn
+    <span class="token punctuation">}</span>
+
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        activeEffect <span class="token operator">=</span> <span class="token keyword">this</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>active<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">cleanupEffect</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>onStop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">onStop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>active <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>之后可能会有更多的<code>option</code>参数，可以用<code>Object.assign</code>进行参数的合并</p> <div class="language-typescript extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">effect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> option<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scheduler <span class="token punctuation">}</span> <span class="token operator">=</span> option
+    <span class="token keyword">const</span> _effect <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ReactiveEffect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> scheduler<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>_effect<span class="token punctuation">,</span> option<span class="token punctuation">)</span>
+
+    _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> runner<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>_effect<span class="token punctuation">)</span>
+    runner<span class="token punctuation">.</span>effect <span class="token operator">=</span> _effect
+
+    <span class="token keyword">return</span> runner
+<span class="token punctuation">}</span>
+</code></pre></div><p>为了更具有语义化和可读性，可以将重命名<code>Object.assign</code>方法为<code>extend</code>，因为可以当作工具方法使用，可以抽离出来</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// src/shared/index.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> extend <span class="token operator">=</span> Object<span class="token punctuation">.</span>assign
+</code></pre></div><div class="language-typescript extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-typescript"><code><span class="token comment">// src/reactivity/effect.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> extend <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../shared&quot;</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">effect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> option<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scheduler <span class="token punctuation">}</span> <span class="token operator">=</span> option
+    <span class="token keyword">const</span> _effect <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ReactiveEffect</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> scheduler<span class="token punctuation">)</span>
+    <span class="token function">extend</span><span class="token punctuation">(</span>_effect<span class="token punctuation">,</span> option<span class="token punctuation">)</span>
+
+    _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> runner<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> _effect<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>_effect<span class="token punctuation">)</span>
+    runner<span class="token punctuation">.</span>effect <span class="token operator">=</span> _effect
+
+    <span class="token keyword">return</span> runner
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/9/2022, 12:00:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/reiner-blog/pages/mini-vue/mini-vue_8.html" class="prev">
+        mini-vue第八章 - 实现 effect.scheduler
+      </a></span> <span class="next"><a href="/reiner-blog/pages/mini-vue/mini-vue_10.html">
+        mini-vue第十章 - 实现 readonly
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/reiner-blog/assets/js/app.9144c545.js" defer></script><script src="/reiner-blog/assets/js/2.b59b1145.js" defer></script><script src="/reiner-blog/assets/js/16.21d91143.js" defer></script>
+  </body>
+</html>
